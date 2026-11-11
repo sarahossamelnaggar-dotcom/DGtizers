@@ -1,0 +1,269 @@
+{
+  "slug": "wacom-cintiq-pro-27",
+  "url": "https://dgtizers.eg/wacom-cintiq-pro-27",
+  "url_ar": "https://dgtizers.eg/ar/wacom-cintiq-pro-27",
+  "lastmod": "2026-03-31",
+  "name": "Wacom Cintiq Pro 27",
+  "name_ar": "شاشة رسم واكوم سينتيك برو 27",
+  "brand": "Wacom",
+  "brand_url": "https://dgtizers.eg/wacom",
+  "model": "DTH271",
+  "gtin": "",
+  "product_id": "403",
+  "categories": [
+    "Pen Tablet Monitor"
+  ],
+  "price_egp": 324500.0,
+  "price_text": "324,500 EGP",
+  "price_old_text": "",
+  "stock": "Out of stock",
+  "stock_text": "Out Of Stock",
+  "summary": "Wacom Cintiq Pro 27 - DTK-2420 - Pen Tablet Monitor - Create directly on a large canvas with premium color performance Use the Wacom Cintiq Pro 24 for absolute harmony with your work. Premium 4K screen with world class color performance, and virtually no",
+  "description_html": "<p><span>27</span></p>",
+  "description_text": "27",
+  "description_html_ar": "<p><span><b>27</b></span></p>",
+  "description_text_ar": "27",
+  "specs": [
+    {
+      "group": "Monitor",
+      "name": "Type",
+      "value": "IPS"
+    },
+    {
+      "group": "Monitor",
+      "name": "Screen Size",
+      "value": "23.6 in (59.9 cm)"
+    },
+    {
+      "group": "Monitor",
+      "name": "Display Area",
+      "value": "522 x 294 mm (20.6 x 11.6 in)"
+    },
+    {
+      "group": "Monitor",
+      "name": "Native Resolution",
+      "value": "3840 x 2160"
+    },
+    {
+      "group": "Monitor",
+      "name": "Color gamut",
+      "value": "99% Adobe RGB (CIE 1931) (typ)"
+    },
+    {
+      "group": "Monitor",
+      "name": "Number of Colors",
+      "value": "1.07 billion colors"
+    },
+    {
+      "group": "Monitor",
+      "name": "Aspect Ratio",
+      "value": "16:9"
+    },
+    {
+      "group": "Monitor",
+      "name": "Contrast Ratio",
+      "value": "1000:1"
+    },
+    {
+      "group": "Monitor",
+      "name": "Viewing Angle",
+      "value": "176°"
+    },
+    {
+      "group": "Monitor",
+      "name": "Surface",
+      "value": "Anti-glare etched glass"
+    },
+    {
+      "group": "Monitor",
+      "name": "Full lamination",
+      "value": "Yes"
+    },
+    {
+      "group": "Monitor",
+      "name": "Brightness",
+      "value": "235 cd/m2 (typ)"
+    },
+    {
+      "group": "Technical",
+      "name": "Technology",
+      "value": "Battery-Free Electromagnetic Resonance"
+    },
+    {
+      "group": "Technical",
+      "name": "Stylus Pen",
+      "value": "Wacom Pro Pen 2"
+    },
+    {
+      "group": "Technical",
+      "name": "Pen Pressure",
+      "value": "8192 levels"
+    },
+    {
+      "group": "Technical",
+      "name": "Tilt Function",
+      "value": "±60°"
+    },
+    {
+      "group": "Technical",
+      "name": "Reading Height",
+      "value": "-"
+    },
+    {
+      "group": "Technical",
+      "name": "Resolution (Lines per Inch)",
+      "value": "5080 LPI"
+    },
+    {
+      "group": "Technical",
+      "name": "Accuracy",
+      "value": "-"
+    },
+    {
+      "group": "Technical",
+      "name": "eraser",
+      "value": "Yes\r\n(8192 levels)"
+    },
+    {
+      "group": "Technical",
+      "name": "Express Keys",
+      "value": "-"
+    },
+    {
+      "group": "Technical",
+      "name": "Roller Wheel",
+      "value": "-"
+    },
+    {
+      "group": "Technical",
+      "name": "Touch Shortcut",
+      "value": "-"
+    },
+    {
+      "group": "Technical",
+      "name": "Multi-Touch",
+      "value": "-"
+    },
+    {
+      "group": "General",
+      "name": "Dimensions/piece",
+      "value": "677 x 394 x 47 mm\n(26.6 x 15.5 x 1.9 in)"
+    },
+    {
+      "group": "General",
+      "name": "Net Weight",
+      "value": "7.2 kg"
+    },
+    {
+      "group": "General",
+      "name": "Colour",
+      "value": "black"
+    },
+    {
+      "group": "General",
+      "name": "Material",
+      "value": "-"
+    },
+    {
+      "group": "Operating Conditions",
+      "name": "Power Input",
+      "value": "100 to 240 VAC, 50/60HZ"
+    },
+    {
+      "group": "Operating Conditions",
+      "name": "Ports Included",
+      "value": "4 x USB3 ports*, 1 x USB C port, 1 x HDMI2.0 port, 1 x DisplayPort, 2 USB-A Ports (one for ExpressKey Remote dongle), audio headset jack, built-in microphone"
+    },
+    {
+      "group": "Operating Conditions",
+      "name": "Hardware Requirements",
+      "value": "USB-C port with DisplayPort Alternate Mode (UHD), or Mini DisplayPort/DisplayPort (UHD) and USB-A, or HDMI 2.0 (UHD) and USB-A"
+    },
+    {
+      "group": "Operating Conditions",
+      "name": "OS Support",
+      "value": "PC: Windows® 7 or later (latest service pack/build)\nMac: OS X 10.11 or later (latest update)"
+    },
+    {
+      "group": "What's included & Extras",
+      "name": "What's Included",
+      "value": "Wacom Cintiq Pro 24\nWacom Pro Pen 2 with 4-color pen ring set\nExpressKey™ Remote (with USB-A RF dongle and 30cm micro-USB to USB charger cable)Pen stand with 10 replacement nibs (6 standard, 4 felt)\n10 replacement nibs (6 standard, 4 felt)\nnib removal tool\nPen holder\n180W AC adaptor and 1.8m power cable\n1.8m USB-C to USB-C cable\n3.0m DisplayPort to DisplayPort cable\n3.0m HDMI2.0 to HDMI2.0 cable\n3.0m standard USB-A to USB-A cable\nDisplayPort to Mini DisplayPort adapter\nQuick Start Guide"
+    },
+    {
+      "group": "What's included & Extras",
+      "name": "stand",
+      "value": "Integrated fold-out legs for 20° angle (5° angle with legs closed)"
+    },
+    {
+      "group": "What's included & Extras",
+      "name": "Warranty",
+      "value": "2 Years"
+    }
+  ],
+  "options": [
+    {
+      "name": "Screen Size",
+      "choices": [
+        {
+          "label": "15.6 in",
+          "url": "https://dgtizers.eg/wacom-cintiq-pro-16",
+          "selected": false
+        },
+        {
+          "label": "23.6 in",
+          "url": "https://dgtizers.eg/wacom-cintiq-pro-24",
+          "selected": false
+        },
+        {
+          "label": "26.9 in",
+          "url": "https://dgtizers.eg/wacom-cintiq-pro-27",
+          "selected": true
+        }
+      ]
+    }
+  ],
+  "photos": [
+    {
+      "file": "photos/01.webp",
+      "alt": "Wacom Cintiq Pro 27",
+      "source_url": "https://dgtizers.eg/image/cache/wp/ge/product/Wacom/cintiq-pro/Cintiq-Pro24/Cintiq%20Pro%2024-1100x1100.webp"
+    },
+    {
+      "file": "photos/02.webp",
+      "alt": "Wacom Cintiq Pro 27",
+      "source_url": "https://dgtizers.eg/image/cache/wp/ge/product/Wacom/cintiq-pro/Cintiq-Pro24/Cintiq.Pro24-2-1100x1100.webp"
+    },
+    {
+      "file": "photos/03.webp",
+      "alt": "Wacom Cintiq Pro 27",
+      "source_url": "https://dgtizers.eg/image/cache/wp/ge/product/Wacom/cintiq-pro/Cintiq-Pro24/Cintiq.Pro24-1-1100x1100.webp"
+    },
+    {
+      "file": "photos/04.webp",
+      "alt": "Wacom Cintiq Pro 27",
+      "source_url": "https://dgtizers.eg/image/cache/wp/ge/product/Wacom/cintiq-pro/Cintiq-Pro24/Cintiq.Pro24-4-1100x1100.webp"
+    },
+    {
+      "file": "photos/05.webp",
+      "alt": "Wacom Cintiq Pro 27",
+      "source_url": "https://dgtizers.eg/image/cache/wp/ge/product/Wacom/cintiq-pro/Cintiq-Pro24/Cintiq.Pro24-3-1100x1100.webp"
+    },
+    {
+      "file": "photos/06.webp",
+      "alt": "Wacom Cintiq Pro 27",
+      "source_url": "https://dgtizers.eg/image/cache/wp/ge/product/Wacom/cintiq-pro/Cintiq-Pro24/Cintiq.Pro24-7-1100x1100.webp"
+    },
+    {
+      "file": "photos/07.webp",
+      "alt": "Wacom Cintiq Pro 27",
+      "source_url": "https://dgtizers.eg/image/cache/wp/ge/product/Wacom/cintiq-pro/Cintiq-Pro24/Cintiq.Pro24-5-1100x1100.webp"
+    },
+    {
+      "file": "photos/08.webp",
+      "alt": "Wacom Cintiq Pro 27",
+      "source_url": "https://dgtizers.eg/image/cache/wp/ge/product/Wacom/cintiq-pro/Cintiq-Pro24/Cintiq.Pro24-6-1100x1100.webp"
+    }
+  ],
+  "language_note": "",
+  "fetched_at": "2026-11-11T22:52+02:00"
+}

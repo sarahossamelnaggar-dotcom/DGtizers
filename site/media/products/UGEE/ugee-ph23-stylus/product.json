@@ -1,0 +1,42 @@
+{
+  "slug": "ugee-ph23-stylus",
+  "url": "https://dgtizers.eg/ugee-ph23-stylus",
+  "url_ar": "https://dgtizers.eg/ar/ugee-ph23-stylus",
+  "lastmod": "2026-04-01",
+  "name": "Ugee PH23 Stylus",
+  "name_ar": "قلم يوجي PH23",
+  "brand": "UGEE",
+  "brand_url": "https://dgtizers.eg/ugee",
+  "model": "PH23",
+  "gtin": "",
+  "product_id": "452",
+  "categories": [
+    "Accessories & Spare Parts"
+  ],
+  "price_egp": 950.0,
+  "price_text": "950 EGP",
+  "price_old_text": "",
+  "stock": "In stock",
+  "stock_text": "In Stock",
+  "summary": "Ugee PH23 Stylus - P01D - Accessories & Spare Parts - Stylus for M808/M908/UE12/UE12Plus Mode: Battery-free Pressure Levels: 16,384 Tilt:±60° Shortcut Buttons: 2",
+  "description_html": "<p><strong>Stylus for M808/</strong><strong>M908/UE12/UE12Plus</strong></p><p>Mode: Battery-free</p><p>Pressure Levels: 16,384</p><p>Tilt:±60°</p><p>Shortcut Buttons: 2</p>",
+  "description_text": "Stylus for M808/M908/UE12/UE12Plus\nMode: Battery-free\nPressure Levels: 16,384\nTilt:±60°\nShortcut Buttons: 2",
+  "description_html_ar": "<p><strong>قلم متوافق مع موديلات يوجي </strong><strong>M808/</strong><strong>M908/UE12/UE12Plus</strong></p><p>لا يحتاج إلى شحن أو بطارية</p><p>حساسية الضغط: 16,384</p><p>حساسية الإمالة:±60°</p><p>أزرار الاختصار: 2</p>",
+  "description_text_ar": "قلم متوافق مع موديلات يوجي M808/M908/UE12/UE12Plus\nلا يحتاج إلى شحن أو بطارية\nحساسية الضغط: 16,384\nحساسية الإمالة:±60°\nأزرار الاختصار: 2",
+  "specs": [],
+  "options": [],
+  "photos": [
+    {
+      "file": "photos/01.webp",
+      "alt": "Ugee PH23 Stylus",
+      "source_url": "https://dgtizers.eg/image/cache/wp/gj/product/ugee/accessories/PH23/Ugee-PH23-Stylus-1-1100x1100.webp"
+    },
+    {
+      "file": "photos/02.webp",
+      "alt": "Ugee PH23 Stylus",
+      "source_url": "https://dgtizers.eg/image/cache/wp/gj/product/ugee/accessories/PH23/Ugee-PH23-Stylus-2-1100x1100.webp"
+    }
+  ],
+  "language_note": "",
+  "fetched_at": "2026-11-11T22:52+02:00"
+}

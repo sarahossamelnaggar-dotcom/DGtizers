@@ -1,0 +1,4 @@
+files 1209
+products 181
+photos 1027
+skipped ['DGtizers-products/products/XPPen/xppen-artist-24-pro/product.html']

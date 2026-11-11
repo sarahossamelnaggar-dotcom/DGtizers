@@ -1,0 +1,35 @@
+{
+  "slug": "customized-order",
+  "url": "https://dgtizers.eg/customized-order",
+  "url_ar": "https://dgtizers.eg/ar/customized-order",
+  "lastmod": "2026-11-07",
+  "name": "Customized Order",
+  "name_ar": "Customized Order",
+  "brand": "",
+  "brand_url": "",
+  "model": "CO",
+  "gtin": "",
+  "product_id": "72",
+  "categories": [],
+  "price_egp": 15000.0,
+  "price_text": "15,000 EGP",
+  "price_old_text": "",
+  "stock": "In stock",
+  "stock_text": "In Stock",
+  "summary": "Customized Order, Customized Order",
+  "description_html": "<p>Customized Order<br/></p>",
+  "description_text": "Customized Order",
+  "description_html_ar": "<p>Customized Order<br/></p>",
+  "description_text_ar": "Customized Order",
+  "specs": [],
+  "options": [],
+  "photos": [
+    {
+      "file": "photos/01.webp",
+      "alt": "Customized Order",
+      "source_url": "https://dgtizers.eg/image/cache/wp/gp/product/customized-order-co-1100x1100.webp"
+    }
+  ],
+  "language_note": "",
+  "fetched_at": "2026-11-11T22:50+02:00"
+}
