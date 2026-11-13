@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DGtizers · App Figma Model</title>
+  <meta name="description" content="Mobile app design model for DGtizers — frames matching the live website.">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="demo.css">
+  <link rel="stylesheet" href="figma-board.css">
+</head>
+<body class="board-page">
+  <header class="board-bar">
+    <div>
+      <p class="eyebrow">Figma-style app model</p>
+      <h1>DGtizers mobile · like the web</h1>
+    </div>
+    <div class="board-actions">
+      <a href="./">Interactive demo</a>
+      <a href="../">Live website</a>
+    </div>
+  </header>
+
+  <p class="board-note">Same dark glass UI as the shop. Scroll sideways through the frames — Home, Shop, Product, Cart, Checkout, Help.</p>
+
+  <div class="board-canvas" id="board">
+    <!-- frames injected -->
+  </div>
+
+  <template id="phone-shell">
+    <article class="frame">
+      <header class="frame-label"><span class="dot"></span><span class="name"></span></header>
+      <div class="phone frame-phone">
+        <div class="phone-bezel" aria-hidden="true"><span class="notch"></span></div>
+        <div class="app frame-app">
+          <div class="status"><span>9:41</span><span class="status-right">LTE · 100%</span></div>
+          <div class="frame-body"></div>
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <script src="figma-board.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+.board-page {
+  min-height: 100vh;
+  overflow-x: auto;
+}
+
+.board-bar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+  padding: 20px 28px 14px;
+  background: rgba(7, 18, 72, 0.82);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.board-bar h1 {
+  margin: 4px 0 0;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+}
+
+.board-bar .eyebrow {
+  margin: 0;
+  color: var(--yellow);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.board-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.board-actions a {
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.06);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.board-note {
+  margin: 0;
+  padding: 14px 28px 0;
+  color: var(--muted);
+  max-width: 70ch;
+}
+
+.board-canvas {
+  display: flex;
+  align-items: flex-start;
+  gap: 36px;
+  padding: 28px 36px 64px;
+  width: max-content;
+  min-height: calc(100vh - 140px);
+}
+
+.frame {
+  display: grid;
+  gap: 12px;
+  width: 390px;
+}
+
+.frame-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255,255,255,0.82);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.frame-label .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--yellow);
+  box-shadow: 0 0 0 4px rgba(249,193,0,0.15);
+}
+
+.frame-phone {
+  height: 780px;
+}
+
+.frame-app {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.frame-body {
+  min-height: 0;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding-top: 0;
+}
+
+.frame-body .app-top {
+  padding-top: 4px;
+}
+
+.frame-body .scroll {
+  overflow: hidden;
+}
+
+.frame-body .tabbar,
+.frame-body .buy-bar {
+  position: relative;
+}
+
+.frame .hero { font-size: 1.75rem; }
+.frame .hero-visual { height: 150px; }
+.frame .product-row { grid-auto-columns: 62%; }
+.frame .shop-grid { max-height: 520px; overflow: hidden; }
+
+@media (max-width: 640px) {
+  .board-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .board-canvas {
+    padding: 20px 16px 48px;
+    gap: 24px;
+  }
+  .frame,
+  .frame-phone {
+    width: min(390px, calc(100vw - 32px));
+  }
+  .frame-phone {
+    height: min(780px, 82vh);
+  }
+}
