@@ -24,11 +24,17 @@ const I18N = {
     footerHelp: "Help",
     delivery: "Delivery",
     warranty: "Warranty",
-    heroTitle: "Draw on tools",
-    heroEm: "that keep up.",
-    heroLede: "Graphic tablets, pen displays, and the pens and parts that keep the work moving. Official distributor of Wacom, XPPen, and Huion in Egypt since 2013.",
-    shopCta: "Shop the catalog",
-    inStockCta: "In stock now",
+    heroEyebrow: "Your ideas. No limits.",
+    heroTitle: "Turning ideas",
+    heroEm: "into what's next.",
+    heroLede: "Your next creative chapter starts with the right tools. Graphic tablets, pen displays, and people who get it.",
+    shopCta: "Explore your next tool",
+    inStockCta: "Find my match",
+    stickerT: "Let's create.",
+    sticker: "Something extraordinary.",
+    calloutT: "Creator tools",
+    callout: "Human support",
+    crewKicker: "The characters",
     factShip: "Across Egypt, weekends excluded",
     factFee: "Flat delivery fee",
     factPay: "On selected bank cards",
@@ -141,11 +147,17 @@ const I18N = {
     footerHelp: "مساعدة",
     delivery: "الشحن",
     warranty: "الضمان",
-    heroTitle: "ارسم بأدوات",
-    heroEm: "تواكب شغفك.",
-    heroLede: "جرافيك تابلت، شاشات رسم، وأقلام وقطع غيار تخلي الشغل يكمل. موزع رسمي لـ Wacom و XPPen و Huion في مصر من ٢٠١٣.",
-    shopCta: "تصفح المنتجات",
-    inStockCta: "المتاح الآن",
+    heroEyebrow: "أفكارك. بلا حدود.",
+    heroTitle: "نحوّل الأفكار",
+    heroEm: "إلى اللي جاي.",
+    heroLede: "الفصل الجاي في شغلك يبدأ بالأداة الصح. جرافيك تابلت، شاشات رسم، وناس فاهمة اللي بتعمله.",
+    shopCta: "اختار أداتك الجاية",
+    inStockCta: "لاقِ الأنسب",
+    stickerT: "يلا نبدع.",
+    sticker: "حاجة غير عادية.",
+    calloutT: "أدوات المبدعين",
+    callout: "ودعم بشري",
+    crewKicker: "الشخصيات",
     factShip: "لكل أنحاء مصر، ما عدا العطلات",
     factFee: "تكلفة شحن ثابتة",
     factPay: "على بطاقات بنوك مختارة",
@@ -424,6 +436,33 @@ function toast(message) {
   clearTimeout(toastTimer);
   toastTimer = setTimeout(() => el.classList.remove("show"), 2200);
 }
+function knockWhite(img) {
+  if (img.dataset.knocked) return;
+  const paint = () => {
+    if (img.dataset.knocked) return;
+    const w = img.naturalWidth;
+    const h = img.naturalHeight;
+    if (!w || !h) return;
+    const canvas = document.createElement("canvas");
+    canvas.width = w;
+    canvas.height = h;
+    const ctx = canvas.getContext("2d", { willReadFrequently: true });
+    ctx.drawImage(img, 0, 0);
+    let frame;
+    try { frame = ctx.getImageData(0, 0, w, h); }
+    catch { return; }
+    const px = frame.data;
+    for (let i = 0; i < px.length; i += 4) {
+      const min = Math.min(px[i], px[i + 1], px[i + 2]);
+      if (min > 232) px[i + 3] = Math.min(px[i + 3], Math.max(0, 255 - (min - 232) * 12));
+    }
+    ctx.putImageData(frame, 0, 0);
+    img.dataset.knocked = "1";
+    img.src = canvas.toDataURL("image/png");
+  };
+  if (img.complete && img.naturalWidth) paint();
+  else img.addEventListener("load", paint, { once: true });
+}
 function bindImages(root) {
   root.querySelectorAll("img[data-fallback]").forEach((img) => {
     img.addEventListener("error", () => {
@@ -433,6 +472,7 @@ function bindImages(root) {
       img.replaceWith(box);
     });
   });
+  root.querySelectorAll(".float img, .card-photo img, .gallery-main img, .thumbs img").forEach(knockWhite);
 }
 function photoHtml(product, file, className) {
   if (!state.photos.has(product.folder)) {
@@ -461,6 +501,10 @@ function applyChrome() {
   const langBtn = document.getElementById("lang-toggle");
   langBtn.textContent = state.lang === "ar" ? "English" : "عربي";
   langBtn.setAttribute("aria-label", state.lang === "ar" ? "Switch to English" : "التحويل إلى العربية");
+  const logoSrc = state.lang === "ar" ? "assets/logo-ar.png" : "assets/logo-en.png";
+  document.querySelectorAll("[data-logo]").forEach((img) => {
+    if (img.getAttribute("src") !== logoSrc) img.setAttribute("src", logoSrc);
+  });
   const route = parseRoute();
   const page = route.parts[0] || "home";
   const cat = route.params.get("cat") || "";
@@ -535,37 +579,38 @@ function renderHome(main) {
       <strong>${esc(catName(name))}</strong>
       <span>${count}</span>
     </a>`).join("");
-  const hero = picks(3);
-  const stage = hero.map((product) => `
-    <a href="#/product/${encodeURIComponent(product.slug)}">
+  const shown = picks(2);
+  const visual = shown.map((product, index) => `
+    <a class="float float-${index === 0 ? "back" : "front"}" href="#/product/${encodeURIComponent(product.slug)}">
       ${photoHtml(product)}
-      <div class="cap">${esc(pname(product))}</div>
     </a>`).join("");
   const featured = picks(8).map(cardHtml).join("");
   const brands = brandCounts().slice(0, 18).map(([name, count]) => `
     <a href="${esc(shopHash({ brand: name }))}">${esc(name === "Other" ? t("other") : name)} · ${count}</a>`).join("");
   main.innerHTML = `
     <section class="hero">
-      <div>
-        <p class="eyebrow"><i></i> Egypt · 2013</p>
-        <div class="hero-title">
-          <h1>${esc(t("heroTitle"))} <em>${esc(t("heroEm"))}</em></h1>
-          ${mascot("mascot-yellow.jpg", t("crewYellowT"), true)}
-        </div>
+      <div class="hero-copy">
+        <p class="eyebrow"><i></i> ${esc(t("heroEyebrow"))}</p>
+        <h1>${esc(t("heroTitle"))}<br>${esc(t("heroEm"))}</h1>
         <p class="lede">${esc(t("heroLede"))}</p>
         <div class="actions">
-          <a class="btn btn-yellow" href="#/shop">${esc(t("shopCta"))}</a>
-          <a class="btn btn-ghost" href="${esc(shopHash({ stock: "in" }))}">${esc(t("inStockCta"))}</a>
+          <a class="btn btn-line" href="#/shop">${esc(t("shopCta"))} <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn-glass" href="${esc(shopHash({ stock: "in" }))}">${esc(t("inStockCta"))} <span class="arrow" aria-hidden="true">→</span></a>
         </div>
-        <ul class="facts">
-          <li><strong>72h</strong>${esc(t("factShip"))}</li>
-          <li><strong>50 EGP</strong>${esc(t("factFee"))}</li>
-          <li><strong>0%</strong>${esc(t("factPay"))}</li>
-        </ul>
       </div>
-      <div class="stage">${stage}</div>
+      <div class="hero-visual">
+        <div class="hero-glow" aria-hidden="true"></div>
+        ${visual}
+        <a class="sticker" href="#/support">
+          <img src="assets/mascot-blue.jpg" alt="${esc(t("crewBlueT"))}">
+          <strong>${esc(t("stickerT"))}</strong>
+          <span>${esc(t("sticker"))}</span>
+        </a>
+        <p class="callout"><strong>${esc(t("calloutT"))}</strong><span>${esc(t("callout"))}</span></p>
+      </div>
     </section>
     <section class="section">
+      <p class="kicker"><i></i>${esc(t("crewKicker"))}<i></i></p>
       <div class="section-head"><h2>${esc(t("crewTitle"))}</h2></div>
       <p class="lede" style="margin-bottom:16px">${esc(t("crewLede"))}</p>
       <div class="crew">

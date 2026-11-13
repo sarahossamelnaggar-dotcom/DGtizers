@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DGtizers</title>
   <meta name="description" content="DGtizers — graphic tablets, pen displays, and drawing accessories in Egypt.">
-  <meta name="theme-color" content="#F9C100">
+  <meta name="theme-color" content="#0b1a66">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;800&family=Fraunces:opsz,wght@9..144,560;9..144,700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=7">
 </head>
 <body>
   <a class="skip" href="#app" data-i18n="skip">Skip to content</a>
@@ -20,7 +20,7 @@
   <header class="site-header">
     <div class="wrap bar">
       <a class="brand" href="#/" data-nav="home">
-        <img src="assets/logo.jpg" alt="DGtizers">
+        <img class="logo" src="assets/logo-en.png" alt="DGtizers" data-logo>
       </a>
       <button id="menu-btn" type="button" aria-expanded="false" aria-controls="nav">
         <span class="sr-only" data-i18n="menu">Menu</span>
@@ -53,7 +53,7 @@
   <footer class="site-footer">
     <div class="wrap footer-grid">
       <div>
-        <img src="assets/logo.jpg" alt="DGtizers">
+        <a class="brand brand-foot" href="#/"><img class="logo" src="assets/logo-en.png" alt="DGtizers" data-logo></a>
         <p data-i18n="footerBlurb">Digital drawing tools in Egypt since 2013. Official distributor of Wacom, XPPen, and Huion.</p>
       </div>
       <div>
@@ -74,6 +74,6 @@
     <p class="legal wrap" id="legal"></p>
   </footer>
   <div id="toast" role="status"></div>
-  <script src="js/app.js"></script>
+  <script src="js/app.js?v=7"></script>
 </body>
 </html>
