@@ -22,8 +22,12 @@
             <span class="btn btn-glass">Find my match</span>
           </div>
           <div class="hero-visual">
-            <img class="float back" src="../media/products/Wacom/wacom-intuos-ctl-6100-mediumblack/photos/01.webp" alt="">
-            <img class="float front" src="../media/products/Xencelabs/xencelabs-pen-tablet-small-bph0812w-a/photos/01.webp" alt="">
+            <div class="float back">
+              <img src="../media/products/Bosto/bosto-t430k-graphics-tablet/photos/01.webp" alt="Bosto tablet">
+            </div>
+            <div class="float front">
+              <img src="../media/products/Xencelabs/xencelabs-pen-tablet-small-bph0812w-a/photos/01.webp" alt="Xencelabs tablet">
+            </div>
             <span class="sticker">
               <img src="../assets/mascot-blue.jpg" alt="">
               <span>Let's create.</span>
